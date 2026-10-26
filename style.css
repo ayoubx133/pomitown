@@ -1,0 +1,28 @@
+:root{--bg:#fff7ef;--ink:#3a2b3f;--soft:#7a6680;--pink:#ff7eb6;--mint:#5fd3b5;--sun:#ffc94a;--card:#ffffff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Nunito",system-ui,sans-serif}
+a{color:#d4407f}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1000px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font:800 26px "Baloo 2",sans-serif}
+.brand img{width:44px;height:44px;border-radius:12px}
+.nav ul{list-style:none;display:flex;gap:16px;margin:0;padding:0}
+.nav a{text-decoration:none;font-weight:700;color:var(--ink)}
+.hero{max-width:1000px;margin:10px auto 0;padding:30px 20px;display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:center}
+.hero h1{font:800 54px/1.05 "Baloo 2",sans-serif;margin:0 0 12px}
+.hero h1 span{color:var(--pink)}
+.hero p{font-size:19px;color:var(--soft);margin:0 0 18px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.pills li{background:var(--card);border:2px solid #f3dce8;border-radius:999px;padding:6px 14px;font-weight:700;font-size:15px}
+.hero img{width:100%;border-radius:28px;box-shadow:0 14px 40px #e6b8cf66}
+.btn{display:inline-block;margin-top:20px;background:var(--pink);color:#fff;text-decoration:none;font-weight:800;padding:12px 26px;border-radius:999px;box-shadow:0 6px 0 #d4407f}
+section{max-width:1000px;margin:0 auto;padding:30px 20px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);border-radius:22px;padding:18px;box-shadow:0 6px 18px #f0d6e255}
+.card h3{margin:0 0 6px;font:800 21px "Baloo 2",sans-serif}
+.prose{max-width:780px;margin:0 auto;padding:20px 20px 40px}
+.prose h1{font:800 42px "Baloo 2",sans-serif;margin:10px 0}
+.prose h2{font:800 24px "Baloo 2",sans-serif;margin:28px 0 6px}
+.meta{color:var(--soft)}
+footer{text-align:center;padding:30px 20px;color:var(--soft);font-size:15px}
+footer a{margin:0 8px}
+@media (max-width:760px){.hero{grid-template-columns:1fr}.hero h1{font-size:40px}.grid{grid-template-columns:1fr}.nav ul{gap:10px;font-size:15px}}
